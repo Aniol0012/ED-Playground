@@ -6,8 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/2019" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2022" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2018-R" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exercices" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ExercicesT2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ExercicesT3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Parcial1" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

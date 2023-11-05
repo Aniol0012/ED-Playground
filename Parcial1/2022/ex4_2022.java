@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class ex3 {
+public class ex4_2022 {
 
     public static List<Integer> getMultiples(List<Integer> source, List<Integer> multiples) {
         List<Integer> result = new ArrayList<>();

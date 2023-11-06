@@ -10,7 +10,7 @@ interface Stack<E> {
     boolean isEmpty();
 }
 
-public class ex3_2019_p1 {
+public class ex2_2019_p1 {
     public static class MyStack<E> implements Stack<E> {
         private static final int DEFAULT_CAPACITY = 10;
         private int size;

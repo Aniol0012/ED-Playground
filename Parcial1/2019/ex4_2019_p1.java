@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Iterator;
 
-public class ex4 {
+public class ex4_2019_p1 {
     /*
     Implementa el método dedup que reciba una lista y elimine de la misma,
     los elementos consecutivos que se encuentren duplicados. Dicha lista no

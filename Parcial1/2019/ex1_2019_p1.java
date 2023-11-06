@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class ex1 {
+public class ex1_2019_p1 {
     public class ArrayList<E> {
         private Object[] theArray;
         private int size; // Mida de la llista

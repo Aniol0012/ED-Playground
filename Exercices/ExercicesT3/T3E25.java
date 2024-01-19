@@ -1,4 +1,4 @@
-public class Tema2Ex25 {
+public class T3E25 {
     static class LinkedList<E> {
         private Node<E> first = null;
         private Node<E> last = null;

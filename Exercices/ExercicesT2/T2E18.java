@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Tema2Ex18 {
+public class T2E18 {
     static class Rectangle {
         final int width;
         final int height;

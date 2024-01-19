@@ -51,12 +51,12 @@ public class T2E11 {
      * The checkRange method, which, given an iterator, returns true or false based on whether all elements
      * accessible through the iterator are within the range defined by two elements passed as parameters along with the
      * iterator: [min, max].
-     * @param it
-     * @param cmp
-     * @param min
-     * @param max
+     * @param it iterator
+     * @param cmp comparator
+     * @param min min element
+     * @param max max element
      * @return true if all elements are within the range defined by two elements passed as parameters along with the
-     * @param <E>
+     * @param <E> type of elements
      */
     public static <E> boolean checkRange(Iterator<E> it, Comparator<E> cmp, E min, E max) {
         if (cmp.compare(min, max) > 0 || !it.hasNext()) {

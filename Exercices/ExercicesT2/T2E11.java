@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,6 +9,7 @@ import java.util.List;
 
 public class T2E11 {
     @Test
+    @DisplayName("Test 1")
     void test_1() {
         List<Integer> list = List.of(1, 20, 7, 6, 99, 61, 40);
         int min = 1;
@@ -17,6 +19,7 @@ public class T2E11 {
     }
 
     @Test
+    @DisplayName("Test 2")
     void test_2() {
         List<Integer> list = List.of(1, 2, 11, 22, 45, 91, 7);
         int min = 1;
@@ -26,6 +29,7 @@ public class T2E11 {
     }
 
     @Test
+    @DisplayName("Test 3")
     void test_3() {
         List<Integer> list = List.of(1);
         int min = 100;
@@ -35,6 +39,7 @@ public class T2E11 {
     }
 
     @Test
+    @DisplayName("Test 4")
     void test_4() {
         List<Integer> list = List.of(1, 2);
         int min = 1;

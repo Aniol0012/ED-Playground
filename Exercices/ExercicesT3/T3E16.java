@@ -63,10 +63,27 @@ public class T3E16 {
             addBefore(element, header.next);
         }
 
+        // Extra
         private void addBefore(E e, Node<E> entry) {
             Node<E> newNode = new Node<>(e, entry, entry.previous);
-            newNode.previous.next = newNode;
+
+            Node<E> prevNode = newNode.previous;
+
+            prevNode.next = newNode;
             entry.previous = newNode;
+
+            size += 1;
+        }
+
+        private void addAfter(E e, Node<E> entry) {
+            Node<E> newNode = new Node<>(e, entry.next, entry);
+
+            Node<E> prevNode = newNode.previous;
+            Node<E> nextNode = newNode.next;
+
+            prevNode.next = newNode;
+            nextNode.previous = newNode;
+
             size += 1;
         }
     }

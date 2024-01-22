@@ -136,4 +136,14 @@ public class T3E16 {
         LinkedList<Integer> list = new LinkedList<>();
         assertThrows(IndexOutOfBoundsException.class, list::getLast);
     }
+
+    @Test
+    void addAndGetFirstAndLast() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.addAfter(1, list.header);
+        list.addAfter(2, list.header.next);
+
+        assertEquals(1, list.getFirst());
+        assertEquals(2, list.getLast());
+    }
 }

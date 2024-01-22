@@ -1,8 +1,6 @@
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.AbstractSequentialList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -94,7 +92,7 @@ public class T3E16 {
 
         list.addFirst(2);
         assertEquals(1, list.getLast());
-        
+
         list.addFirst(3);
         assertEquals(1, list.getLast());
     }

@@ -15,17 +15,17 @@ public class T3E8 {
         boolean isEmpty();
     }
 
-    public static class MyStack<E> implements Stack<E> {
+    public static class ArrayStack<E> implements Stack<E> {
         private static final int DEFAULT_CAPACITY = 10;
         private int size;
         private Object[] theStack;
 
-        public MyStack() {
+        public ArrayStack() {
             this.theStack = new Object[DEFAULT_CAPACITY];
             this.size = 0;
         }
 
-        public MyStack(int initialCapacity) {
+        public ArrayStack(int initialCapacity) {
             this.theStack = new Object[initialCapacity];
             this.size = 0;
         }
@@ -77,7 +77,7 @@ public class T3E8 {
     }
     @Test
     public void test1_pushAndTop() {
-        MyStack<Integer> stack = new MyStack<>();
+        ArrayStack<Integer> stack = new ArrayStack<>();
         stack.push(1);
         stack.push(2);
         assertEquals(2, stack.top());
@@ -85,7 +85,7 @@ public class T3E8 {
 
     @Test
     public void test2_popAndIsEmpty() {
-        MyStack<String> stack = new MyStack<>();
+        ArrayStack<String> stack = new ArrayStack<>();
         stack.push("test");
         assertFalse(stack.isEmpty());
         stack.pop();
@@ -94,21 +94,21 @@ public class T3E8 {
 
     @Test
     public void test3_popEmptyStack() {
-        MyStack<Double> stack = new MyStack<>();
+        ArrayStack<Double> stack = new ArrayStack<>();
         Exception exception = assertThrows(IllegalStateException.class, stack::pop);
         assertEquals("The stack is empty", exception.getMessage());
     }
 
     @Test
     public void test4_topEmptyStack() {
-        MyStack<Object> stack = new MyStack<>();
+        ArrayStack<Object> stack = new ArrayStack<>();
         Exception exception = assertThrows(NoSuchElementException.class, stack::top);
         assertEquals("The stack is empty", exception.getMessage());
     }
 
     @Test
     public void test5_pushBeyondCapacity() {
-        MyStack<Integer> stack = new MyStack<>(1);
+        ArrayStack<Integer> stack = new ArrayStack<>(1);
         stack.push(1);
         stack.push(2);
         assertEquals(2, stack.top());

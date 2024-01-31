@@ -19,11 +19,13 @@ public class T2E18 {
         }
 
         public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
             if (obj instanceof Rectangle rect) {
                 return (width == rect.width) && (height == rect.height);
-            } else {
-                return false;
             }
+            return false;
         }
 
         public boolean equals_v2(Object obj, Color color) {
@@ -46,6 +48,17 @@ public class T2E18 {
                 return rect.equals(this);
             }
             return false;
+        }
+
+        public boolean equals_v4(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (obj == null || obj.getClass() != this.getClass()) {
+                return false;
+            }
+            Rectangle rect = (Rectangle) obj;
+            return (width == rect.width) && (height == rect.height);
         }
 
     }
